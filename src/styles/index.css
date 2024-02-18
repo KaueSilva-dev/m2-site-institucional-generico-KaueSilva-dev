@@ -6,6 +6,9 @@ header {
     align-items: center;
     background-color: var(--gray-1);
     padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1
 }
 
 .logo{
@@ -83,7 +86,6 @@ bold {
 }
 
 .quemSomos{
-    width: 100%;
     padding: 5rem;
     display: flex;
     justify-content: space-evenly;
@@ -120,8 +122,11 @@ bold {
 
 .duvidas__containerTitle{
     width: 25rem;
+    height: 23rem;
     margin: 0 10rem 0 20rem;
     padding: 5rem;
+    position: sticky;
+    top: 6rem;
 }
 
 .duvidas__title {
@@ -133,7 +138,7 @@ bold {
     padding: 10px 0;
 }
 
-.duvidas__containerTitle >p{
+.duvidas__containerTitle > p {
     font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
@@ -197,6 +202,8 @@ bold {
     padding: 3rem;
     background-color: var(--brand-1);
     margin: 0 9rem 0 0;
+    position: sticky;
+    top:6rem;
 }
 
 .containerTitle > h2 {
@@ -220,7 +227,7 @@ bold {
 .comentatiosAlunos__container{
     display: flex;
     flex-direction: column;
-
+    height: 50rem;
 }
 
 .comentariosAlunos__comentarios{
