@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+@import url(./globalStyles.css);
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--gray-1);
+    padding: 10px;
+}
+
+.logo{
+    color: var(--gray-7);
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+#showMessage {
+    border: 1px solid var(--gray-7);
+    background: var(--gray-1);
+    padding: 10px 15px;
+    color: var(--gray-7);
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.homeBanner{
+    background-color: var(--gray-2);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 150px 0;
+}
+
+.homeBanner__titleBanner{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 140%;
+    color: var(--gray-7);
+    text-align: center;
+}
+
+bold { 
+    color: var(--brand-1);
+}
+
+.homeBanner__textBanner{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-4);
+    text-align: center;
+}
+
+.homeBanner__buttom{
+    background-color: var(--brand-2);
+    width: 100px;
+    height: 41px;
+    padding: 1px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sobreNos__link{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-7);
+    text-align: center;
+    text-decoration: none;
+}
+
+.quemSomos{
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--gray-1);
+}
+
+.quemSomos__title{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 160%;
+    color: var(--gray-7);
+    flex-wrap: wrap;
+}
+
+.quemSomos__text{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-4);
+    width: 35rem;
+    height: 100px;
+    text-align: justify;
+}
+
+.duvidas{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--gray-2);
+}
+
+.duvidas__containerTitle{
+    width: 25rem;
+    margin: 0 10rem 0 20rem;
+    padding: 5rem;
+}
+
+.duvidas__title {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 160%;
+    color: var(--gray-7);
+    padding: 10px 0;
+}
+
+.duvidas__containerTitle >p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-4);
+    text-align: justify;
+    padding: 2rem 0;
+}
+
+#showModal {
+    background-color: var(--brand-1);
+    width: 21rem;
+    height: 4rem;
+    padding: 0.5rem 4rem 0.5rem 4rem;
+    border: solid 1px transparent;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-7);
+    text-align: center;
+    text-decoration: none;
+}
+
+.duvidas__containerRespostas {
+    width: 50rem;
+    padding: 5rem;
+}
+
+.duvidas__containerRespostas > h3 {
+    margin-bottom: 1rem;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 160%;
+    color: var(--gray-7);
+    margin-left: 5rem;
+}
+
+.duvidas__containerRespostas > p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-4);
+    margin-bottom: 3rem;
+    width: 35rem;
+    height: 100px;
+    text-align: justify;
+}
+
+.comentariosAlunos{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--gray-2);
+}
+
+.containerTitle{
+    width: 25rem;
+    height: 15rem;
+    padding: 3rem;
+    background-color: var(--brand-1);
+    margin: 0 9rem 0 0;
+}
+
+.containerTitle > h2 {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 160%;
+    color: var(--gray-7);
+}
+
+.containerTitle > p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-7);
+    height: 100px;
+    text-align: justify;
+}
+
+.comentatiosAlunos__container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.comentariosAlunos__comentarios{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.comentarios__nomeAluno{
+    width: 15rem;
+
+}
+
+.comentarios__nomeAluno > h3 {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 160%;
+    color: var(--gray-7);
+}
+
+.comentarios__nomeAluno  > p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-4);
+}
+
+.comentarios__comentarioAluno{
+    width: 30rem;
+    text-align: justify;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-4);
+    padding: 0 0 2rem 0;
+}
+
+footer{
+    background-color: var(--gray-1);
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray-7);
+}
