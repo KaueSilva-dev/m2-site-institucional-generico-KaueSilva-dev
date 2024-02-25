@@ -7,30 +7,34 @@
     <link rel="shortcut icon" href="./src/assets/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="stylesheet" href="./src/styles/index.css">
+    <script src="src/scripts/index.js" defer></script>
     <title>Instutcional Generico</title>
 </head>
 
 <body>
     <header>
         <h1 class="logo">Generic Course</h1>
-        <button id="showMessage">
+        <button id="showModal" class="showModal_header">
             Entre para próxima turma
         </button>
-        <dialog id="modalController">
-            <div class="modal__container">
-                <h2>Cadastro</h2>
-                <button id="closed"></button>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam similique, deleniti vitae eaque eum
-                expedita? Dolorum deserunt debitis</p>
-            <input type="email" placeholder="Digitar Email">
-            <button>Entrar na lista da próxima turma.</button>
-        </dialog>
     </header>
     <main>
+        <dialog id="modalController" class="modalController">
+            <div id="modalContainer">
+                <div class="modalContainer__titleModal">
+                    <h2>Cadastro</h2>
+                    <button id="closed" class="closed">X</button>
+                </div>
+                <p class="modalContainer__input">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam similique, deleniti vitae eaque eum
+                    expedita? Dolorum deserunt debitis</p>
+                <input type="email" placeholder="Digitar Email">
+                <button class="modalContainer__button">Entrar na lista da próxima turma.</button>
+            </div>
+        </dialog>
         <section class="homeBanner">
             <h1 class="homeBanner__titleBanner">Desenvolvendo <bold>suas</bold> próximas habilidades</h1>
-            <p class="homeBanner__textBanner">Lorem ipsum dolor sit amet consectetur adipisicing elit. </br> Amet, assumenda. Sequi beatae enim quod quia
+            <p class="homeBanner__textBanner">Lorem ipsum dolor sit amet consectetur adipisicing elit. </br> Amet,
+                assumenda. Sequi beatae enim quod quia
                 veniam aut.</p>
             <buttom class="homeBanner__buttom">
                 <a href="#" class="sobreNos__link">
@@ -41,8 +45,10 @@
         <section class="quemSomos">
             <h2 class="quemSomos__title">Quem somos nós?</h2>
             <div class="quemSomos__text">
-                <p class="quemSomos__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nobis suscipit, error aperiam asperiores
-                    temporibus perspiciatis excepturi, iste similique exercitationem placeat possimus inventore assumenda
+                <p class="quemSomos__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nobis suscipit,
+                    error aperiam asperiores
+                    temporibus perspiciatis excepturi, iste similique exercitationem placeat possimus inventore
+                    assumenda
                     recusandae eaque dicta amet minus unde!</p>
             </div>
         </section>
@@ -52,7 +58,7 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum sequi maxime sed ut ratione dolores
                     harum laborum suscipit inventore aut cupiditate fuga, illum labore voluptate, error quia recusandae
                     at corporis?</p>
-                <button id="showModal">Entre para a próxima turma</button>
+                <button id="showModal2" class="showModal__duvidas">Entre para a próxima turma</button>
             </div>
             <div class="duvidas__containerRespostas">
                 <h3>Quanto custa o curso?</h3>
@@ -85,7 +91,9 @@
                         <p>Aluna na turma 2009</p>
                     </div>
                     <div class="comentarios__comentarioAluno">
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 👋🏿</p>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution of letters, as opposed to using 👋🏿</p>
                     </div>
                 </div>
                 <div class="comentariosAlunos__comentarios">
@@ -94,7 +102,9 @@
                         <p>Aluna na turma 2009</p>
                     </div>
                     <div class="comentarios__comentarioAluno">
-                        <p>It is a 🎨 established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
+                        <p>It is a 🎨 established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution of letters, as opposed to using</p>
                     </div>
                 </div>
                 <div class="comentariosAlunos__comentarios">
@@ -103,28 +113,34 @@
                         <p>Aluna na turma 2009</p>
                     </div>
                     <div class="comentarios__comentarioAluno">
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ❤️ ❤️ ❤️</p>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution of letters, as opposed to using ❤️ ❤️ ❤️</p>
+                    </div>
+                </div>
+                <div class="comentariosAlunos__comentarios">
+                    <div class="comentarios__nomeAluno">
+                        <h3>João Vaz</h3>
+                        <p>Aluna na turma 2009</p>
+                    </div>
+                    <div class="comentarios__comentarioAluno">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution of letters, as opposed to using 🕓 🕓 🕓️</p>
+                    </div>
+                </div>
+                <div class="comentariosAlunos__comentarios">
+                    <div class="comentarios__nomeAluno">
+                        <h3>Gio Oliveia</h3>
+                        <p>Aluna na turma 2009</p>
+                    </div>
+                    <div class="comentarios__comentarioAluno">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution of letters, as opposed to using 👏 👏 👏️</p>
+                    </div>
                 </div>
             </div>
-            <div class="comentariosAlunos__comentarios">
-                <div class="comentarios__nomeAluno">
-                    <h3>João Vaz</h3>
-                    <p>Aluna na turma 2009</p>
-                </div>
-                <div class="comentarios__comentarioAluno">
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 🕓 🕓 🕓️</p>
-                </div>
-            </div>
-            <div class="comentariosAlunos__comentarios">
-                <div class="comentarios__nomeAluno">
-                    <h3>Gio Oliveia</h3>
-                    <p>Aluna na turma 2009</p>
-                </div>
-                <div class="comentarios__comentarioAluno">
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 👏 👏 👏️</p>
-                </div>
-            </div>
-        </div>
             <div class="containerTitle">
                 <h2>O que nossos alunos comentam?</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, illum. Praesentium voluptatum
